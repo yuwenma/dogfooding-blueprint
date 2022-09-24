@@ -11,7 +11,6 @@
 # # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # # See the License for the specific language governing permissions and
 # # limitations under the License.
-
 apiVersion: v1
 kind: Namespace
 metadata: # kpt-merge: /binding
@@ -28,4 +27,4 @@ metadata: # kpt-merge: config-control/binding
   annotations:
     config.kubernetes.io/local-config: "binding"
     internal.kpt.dev/upstream-identifier: 'resourcemanager.cnrm.cloud.google.com|Project|config-control|binding'
-    cnrm.cloud.google.com/blueprint: 'kpt-pkg'
+    cnrm.cloud.google.com/blueprint: 'kpt-pkg-fn'
