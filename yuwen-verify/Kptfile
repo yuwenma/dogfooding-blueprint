@@ -1,0 +1,21 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /yuwen-verify
+  name: yuwen-verify
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|yuwen-verify'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/yuwenma/porch-dogfooding-infra
+    directory: child-porch
+    ref: child-porch/v1
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/yuwenma/porch-dogfooding-infra
+    directory: child-porch
+    ref: child-porch/v1
+    commit: e4b706415cf8298cda04f712cf03659567fc23bf
+info:
+  description: Porch dogfooding child installation
